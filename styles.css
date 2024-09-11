@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111; /* Fundo escuro para um visual mais elegante */
+}
+
+header {
+    background-color: #006BB6; /* Azul NBA */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #FFB700; /* Linha amarela para destaque */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamanho maior para destaque */
+    font-weight: bold;
+    letter-spacing: 2px; /* Espaçamento entre letras */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: calc(100% - 160px); /* Calcula a altura excluindo o header e o footer */
+    box-sizing: border-box;
+    background-color: #111; /* Fundo escuro para o conteúdo */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima para manter o layout consistente */
+    margin: 0 auto;
+    gap: 80px; /* Espaço entre o texto e o vídeo */
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+    box-sizing: border-box;
+}
+
+.description {
+    flex: 1;
+    flex-basis: 400px; /* Define a largura base da caixa de texto */
+    font-size: 1.5em;
+    color: #FFF; /* Texto branco para contraste com o fundo escuro */
+    line-height: 1.6; /* Aumenta a altura da linha para melhor legibilidade */
+    max-width: 500px; /* Limita a largura máxima da caixa de texto */
+    border: 2px solid #FFB700; /* Borda amarela para destacar a caixa de texto */
+    padding: 20px;
+    border-radius: 8px; /* Cantos arredondados */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+}
+
+.video-thumbnail {
+    transition: transform 0.3s ease;
+}
+
+.video-main img {
+    width: 60%;  /* Ajustado para 60% da largura do container principal */
+    height: auto;
+    border-radius: 8px; /* Cantos arredondados para a thumbnail */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para efeito de profundidade */
+}
+
+footer {
+    background-color: #006BB6; /* Azul NBA */
+    color: white;
+    padding: 20px 0; /* Aumenta o padding do footer para mais espaço */
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 4px solid #FFB700; /* Linha amarela para destaque */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço igualmente entre as imagens */
+    align-items: center;
+    gap: 10px; /* Espaço entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte se necessário */
+    width: 100%; /* Ocupa toda a largura do footer */
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+    box-sizing: border-box;
+}
+
+.footer-links a {
+    flex: 1; /* Faz com que as imagens se ajustem igualmente ao espaço disponível */
+    text-decoration: none;
+    margin: 0 5px; /* Espaçamento entre as imagens */
+}
+
+.footer-links img {
+    width: 100%; /* Faz com que as imagens ocupem 100% do espaço disponível do link */
+    height: auto;
+    border-radius: 8px; /* Cantos arredondados para as thumbnails */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para efeito de profundidade */
+}
+
+.footer-links img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Sombra mais intensa ao passar o mouse */
+}
